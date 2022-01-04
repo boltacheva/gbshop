@@ -11,6 +11,7 @@
     --title-block-pink: #f16d7f;
     --btn-form-pink: #e05c6e;
     --input-form-grey: #e1e1e1;
+    --menu-grey: #6f6e6e;
 }
 
 body {
@@ -47,9 +48,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 75px;
+    position: relative;
 }
 
-.header__link {
+.header__menu-link {
     text-decoration: none;
     margin: 0 0 0 33px;
 }
@@ -59,7 +62,7 @@ body {
 }
 
 .header__search {
-    margin: 7px 0 0 41px;
+    margin: 0px 0 0 41px;
 }
 
 .header__search-form {
@@ -142,19 +145,75 @@ body {
     opacity: 0.7;
 }
 
-.header__link-img {
+.header-link__img {
     fill: var(--white-color);
 }
 
-.header__link-img:hover,
-.header__link-img:focus {
+.header-link__img:hover,
+.header-link__img:focus {
     fill: var(--btn-form-pink);
     cursor: pointer;
 }
 
-.header__link-img:active {
+.header-link__img:active {
     fill: var(--btn-form-pink);
     opacity: 0.7;
+}
+
+.header__nav {
+    position: absolute;
+    background: var(--white-color);
+    right: 0;
+    width: 232px;
+    height: 764px;
+    display: none;
+}
+
+.header__nav-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 17px;
+    text-align: left;
+    margin: 37px 0 4px 34px;
+}
+.nav-sub-item__wrp {
+    margin: 20px 0 0 34px;
+}
+
+.nav-sub-item__link {
+    color: var(--title-block-pink);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-sub-item__subwrp {
+    margin: 10px 0 10px 55px;
+}
+
+.nav-sub-item__sublink {
+    color: var(--menu-grey);
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.nav-sub-item__sublink:hover,
+.nav-sub-item__sublink:focus {
+    cursor: pointer;
+    color: var(--title-block-pink);
+}
+
+.nav-sub-item__sublink:active {
+    color: var(--title-block-pink);
+    opacity: 0,7;
+}
+
+.header__menu-btn:hover + .header__nav,
+.header__menu-btn:focus + .header__nav {
+    display: block;
+}
+
+.header__nav:hover {
+    display: block;
 }
 
 .brand {
@@ -414,7 +473,7 @@ body {
 .products__btn:focus {
     background-color: var(--title-block-pink);
     cursor: pointer;
-    border: var(--title-block-pink);
+    border: 1px solid var(--title-block-pink);
     color: var(--white-color);
 }
 
@@ -422,7 +481,7 @@ body {
     opacity: 0.7;
     background-color: var(--title-block-pink);
     cursor: pointer;
-    border: var(--title-block-pink);
+    border: 1px solid var(--title-block-pink);
     color: var(--white-color);
 } 
 
