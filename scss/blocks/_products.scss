@@ -1,0 +1,174 @@
+.products__title {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    font-weight: 400;
+    margin: 96px 0 0 6px;
+}
+
+.products__text {
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 48px 0;
+}
+
+.products__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.products__item {
+    background-color: $grey-color;
+    width: 360px;
+    margin: 0 0 30px 0;
+}
+
+.card-img {
+    width: 100%;
+    height: 420px;
+}
+
+.card-wrp {
+    position: relative;
+}
+
+.overlay {
+    width: 100%;
+    height: 420px;
+    background: rgba(58, 56, 56, 0.86);
+    position: absolute;
+    top: 0;
+}
+
+.card-button {
+    position: absolute;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 138px;
+    height: 43px;
+    border: 1px solid $white-color;
+    background-color: transparent;
+    color: $white-color;
+    padding: 13px 15px 15px 50px;
+}
+
+.card-button:hover,
+.card-button:focus {
+    border: 1px solid $text-pink;
+    background-color: $text-pink;
+    color: $white-color;
+    cursor: pointer;
+}
+
+.card-button:active {
+    opacity: 0.7;
+    border: 1px solid $text-pink;
+    background-color: $text-pink;
+    color: $white-color;
+    cursor: pointer;
+}
+
+.card-btn-wrp {
+    position: relative;
+}
+
+.card-button:before {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 24px;
+    background: transparent;
+    background-image: url(../img/cart.svg);
+    background-size: 26px 24px;
+    top: 10px;
+    left: 11px;
+}
+
+.card-wrp-overlay {
+    position: relative;
+}
+
+.card-button-overlay {
+    position: absolute;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-wrp-overlay:before {
+    content: '';
+    width: 100%;
+    min-height: 150px;
+    background: rgba(58, 56, 56, 0.86);
+    position: absolute;
+    top: 0;
+}
+
+.overlay,
+.card-button {
+    display: none;
+}
+
+.card-wrp-overlay:before {
+    display: none;
+}
+
+.card:hover .card-button,
+.card:hover .overlay,
+.card:hover .card-wrp-overlay:before {
+    display: block;
+}
+
+.products__item-title {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding: 25px 0 0 18px ;
+}
+
+.products__item-text{
+    font-weight: 300;
+    line-height: 17px;
+    padding: 0 28px 0 18px;
+    margin: 13px 0 18px 0;
+}
+
+.products__item-price {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: $text-pink;
+    padding: 0 0 20px 18px;
+}
+
+.products__btn {
+    text-transform: capitalize;
+    @include flex-center;
+    border: 1px solid $btn-border;
+    color: $text-pink;
+    width: 211px;
+    height: 47px;
+    margin: 0 auto;
+}
+
+.products__btn:hover,
+.products__btn:focus {
+    background-color: $title-block-pink;
+    cursor: pointer;
+    border: 1px solid $title-block-pink;
+    color: $white-color;
+}
+
+.products__btn:active {
+    opacity: 0.7;
+    background-color: $title-block-pink;
+    cursor: pointer;
+    border: 1px solid $title-block-pink;
+    color: $white-color;
+} 
