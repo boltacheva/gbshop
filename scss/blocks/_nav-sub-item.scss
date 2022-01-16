@@ -1,0 +1,32 @@
+.nav-sub-item__wrp {
+    margin: 20px 0 0 34px;
+}
+
+.nav-sub-item__link {
+    color: $title-block-pink;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-sub-item__subwrp {
+    margin: 10px 0 10px 55px;
+}
+
+.nav-sub-item__sublink {
+    color: $menu-grey;
+    text-transform: capitalize;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        color: $title-block-pink;
+    }
+
+    &:active {
+        color: $title-block-pink;
+        opacity: 0,7;
+    }
+}
+
+

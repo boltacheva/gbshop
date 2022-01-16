@@ -77,7 +77,7 @@
     border: none;
 }
 
-.header__menu-btn:hover,
+/*.header__menu-btn:hover,
 .header__menu-btn:focus {
     outline: 1px solid $btn-form-pink;
     cursor: pointer;
@@ -87,7 +87,7 @@
     outline: 1px solid $btn-form-pink;
     background: $black;
     opacity: 0.7;
-}
+}*/
 
 .header__menu-img {
     fill: $white-color;
@@ -122,7 +122,8 @@
 .header__nav {
     position: absolute;
     background: $white-color;
-    right: 0;
+    left: 1138px;
+    top: 75px;
     width: 232px;
     height: 764px;
     display: none;
@@ -135,39 +136,9 @@
     text-align: left;
     margin: 37px 0 4px 34px;
 }
-.nav-sub-item__wrp {
-    margin: 20px 0 0 34px;
-}
 
-.nav-sub-item__link {
-    color: $title-block-pink;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.nav-sub-item__subwrp {
-    margin: 10px 0 10px 55px;
-}
-
-.nav-sub-item__sublink {
-    color: $menu-grey;
-    text-transform: capitalize;
-    text-decoration: none;
-}
-
-.nav-sub-item__sublink:hover,
-.nav-sub-item__sublink:focus {
-    cursor: pointer;
-    color: $title-block-pink;
-}
-
-.nav-sub-item__sublink:active {
-    color: $title-block-pink;
-    opacity: 0,7;
-}
-
-.header__menu-btn:hover + .header__nav,
-.header__menu-btn:focus + .header__nav {
+.header__menu-btn:hover +.header__nav,
+.header__menu-btn:focus +.header__nav {
     display: block;
 }
 
