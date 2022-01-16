@@ -1,0 +1,58 @@
+.footer__subscribe {
+    background-image: url(../img/surfer.jpg);
+    height: 448px;
+    display: flex;
+    align-items: center;
+}
+
+.footer__subscribe-wrp {
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+}
+
+.footer__social {
+    background-color: $black;
+    height: 80px;
+    display: flex;
+}
+
+.footer__social-wrp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__social-copy {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    color: $grey-color;
+}
+
+.footer__social-list {
+    display: flex;
+}
+
+.footer__social-item {
+    margin: 0 0 0 7px;
+    width: 32px;
+    height: 32px;
+    background-color: $footer-text-white;
+    position: relative;
+}
+
+.footer__social-item:focus,
+.footer__social-item:hover {
+    cursor: pointer;
+    background-color: $btn-form-pink;
+}
+
+.footer__social-item:active {
+    background-color: $btn-form-pink;
+    opacity: 0.7;
+}

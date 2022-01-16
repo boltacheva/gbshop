@@ -1,0 +1,19 @@
+.social-btn__img {
+    fill: $black;
+    position: absolute;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        fill: $footer-text-white;
+    }
+
+    &:active {
+        fill: $footer-text-white;
+        opacity: 0.7;
+    }
+}
+

@@ -1,0 +1,147 @@
+.header {
+    background-color: $black;
+    min-height: 75px;
+}
+
+.header__wrp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+    position: relative;
+}
+
+.header__menu-link {
+    text-decoration: none;
+    margin: 0 0 0 33px;
+}
+
+.header__logo-form-wrp {
+    display: flex;
+}
+
+.header__search {
+    margin: 0px 0 0 41px;
+}
+
+.header__search-form {
+    position: relative;
+}
+
+[type="search"] {
+    padding: 10px 35px;
+    border: none;
+    outline: 1px solid $input-form-grey;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    -webkit-border-top-right-radius: 25px;
+    -webkit-border-bottom-right-radius: 25px;
+    -moz-border-radius-topright: 25px;
+    -moz-border-radius-bottomright: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    -webkit-border-top-left-radius: 25px;
+    -webkit-border-bottom-left-radius: 25px;
+    -moz-border-radius-topleft: 25px;
+    -moz-border-radius-bottomleft: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+[type="search"]:hover,
+[type="search"]:focus {
+    outline: 1px solid $btn-border;
+}
+
+.header__search-img {
+    fill: $white-color;
+    position: absolute;
+    padding: 5px 0 0 5px;
+}
+
+.header__search-img:hover,
+.header__search-img:focus {
+    fill: $btn-form-pink;
+    cursor: pointer;
+}
+
+.header__search-img:active {
+    fill: $btn-form-pink;
+    opacity: 0.7;
+}
+
+.header__menu-btn {
+    background: $black;
+    border: none;
+}
+
+/*.header__menu-btn:hover,
+.header__menu-btn:focus {
+    outline: 1px solid $btn-form-pink;
+    cursor: pointer;
+}
+
+.header__menu-btn:active {
+    outline: 1px solid $btn-form-pink;
+    background: $black;
+    opacity: 0.7;
+}*/
+
+.header__menu-img {
+    fill: $white-color;
+}
+
+.header__menu-img:hover,
+.header__menu-img:focus {
+    fill: $btn-form-pink;
+    cursor: pointer;
+}
+
+.header__menu-img:active {
+    fill: $btn-form-pink;
+    opacity: 0.7;
+}
+
+.header-link__img {
+    fill: $white-color;
+}
+
+.header-link__img:hover,
+.header-link__img:focus {
+    fill: $btn-form-pink;
+    cursor: pointer;
+}
+
+.header-link__img:active {
+    fill: $btn-form-pink;
+    opacity: 0.7;
+}
+
+.header__nav {
+    position: absolute;
+    background: $white-color;
+    left: 1138px;
+    top: 75px;
+    width: 232px;
+    height: 764px;
+    display: none;
+}
+
+.header__nav-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 17px;
+    text-align: left;
+    margin: 37px 0 4px 34px;
+}
+
+.header__menu-btn:hover +.header__nav,
+.header__menu-btn:focus +.header__nav {
+    display: block;
+}
+
+.header__nav:hover {
+    display: block;
+}

@@ -1,0 +1,86 @@
+.newsletter {
+    width: 556px;
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 40px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__text{
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 0 0 32px 0;
+    }
+    
+    &__wrp {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__btn {
+        height: 49px;
+        width: 100px;
+        background-color: $btn-form-pink;
+        -webkit-border-top-right-radius: 25px;
+        -webkit-border-bottom-right-radius: 25px;
+        -moz-border-radius-topright: 25px;
+        -moz-border-radius-bottomright: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border: none;
+        color: $white-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+
+        &:hover,
+        &:focus {
+            background-color: $white-color;
+            cursor: pointer;
+            border: 1px solid $btn-form-pink;
+            color: $btn-form-pink;
+        }
+        
+        &:active {
+            opacity: 0.7;
+            background-color: $white-color;
+            cursor: pointer;
+            border: 1px solid $btn-form-pink;
+            color: $btn-form-pink;
+        }
+    }
+    
+}
+
+.newsletter__email {
+    height: 49px;
+    width: 300px;
+    -webkit-border-top-left-radius: 25px;
+    -webkit-border-bottom-left-radius: 25px;
+    -moz-border-radius-topleft: 25px;
+    -moz-border-radius-bottomleft: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border: none;
+    background-color: $input-form-grey;
+    color: $black;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+[type="email"] {
+    padding: 0 0 0 22px;
+    border: none;
+}
+
+[type="email"]:hover,
+[type="email"]:focus {
+    outline: 1px solid $btn-form-pink;
+}
+
