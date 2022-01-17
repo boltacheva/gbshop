@@ -1,13 +1,29 @@
 .footer__subscribe {
     background-image: url(../img/surfer.jpg);
-    height: 448px;
+    background-size: cover;
+    min-height: 448px;
     display: flex;
     align-items: center;
+
+    @include tablet {
+        min-height: 693px;
+    }
 }
 
 .footer__subscribe-wrp {
     display: flex;
     justify-content: space-between;
+
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.footer__up-newsletter {
+    @include tablet {
+        margin: 48px 0 0 0;
+    }
 }
 
 form {
@@ -16,14 +32,24 @@ form {
 
 .footer__social {
     background-color: $black;
-    height: 80px;
+    min-height: 80px;
     display: flex;
+
+    @include mobile {
+        min-height: 143px;
+    }
 }
 
 .footer__social-wrp {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include mobile {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: normal;
+    }
 }
 
 .footer__social-copy {
@@ -32,6 +58,10 @@ form {
     line-height: 19px;
     text-align: left;
     color: $grey-color;
+
+    @include mobile {
+        padding: 40px 0 9px 0;
+    }
 }
 
 .footer__social-list {
