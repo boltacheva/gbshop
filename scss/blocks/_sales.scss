@@ -7,15 +7,26 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .sales__item {
-    width: 360px;
+    min-width: 31%;
     min-height: 260px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    @include tablet {
+        min-height: 161px;
+    }
+
+    @include mobile {
+        width: 100%;
+        min-height: 249px;
+        margin: 32px 0 0 0;
+    }
 }
 
 .sales__item-text {
@@ -33,18 +44,32 @@
 
 .sales__item--women {
     background-image: url(../img/woman.jpg);
+    background-size: cover;
 }
 
 .sales__item--men {
     background-image: url(../img/man.jpg);
+    background-size: cover;
 }
 
 .sales__item--kids {
     background-image: url(../img/kids.jpg);
+    background-size: cover;
 }
 
 .sales__item--accessories {
     background-image: url(../img/accessories.jpg);
+    background-size: cover;
     width: 100%;
     margin: 30px 0 0 0;
+    min-height: 180px;
+
+    @include tablet {
+        min-height: 116px;
+        margin: 20px 0 0 0;
+    }
+
+    @include mobile {
+        min-height: 111px;
+    }
 }
