@@ -449,6 +449,9 @@ body {
 .card:hover .card-wrp-overlay:before {
   display: block; }
 
+.products {
+  margin-bottom: 128px; }
+
 .products__title {
   font-size: 30px;
   line-height: 36px;
