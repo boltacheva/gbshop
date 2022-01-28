@@ -34,17 +34,6 @@
     z-index: 1;
 }
 
-.fa-wrp {
-    font-size: 22px;
-    padding: 12px 17px;
-    background-color: $menu-grey;
-    color: $black;
-}
-
-.fa-wrp:hover {
-    color: $pink-color;
-}
-
 .product__item {
     margin-top: -60px;
     z-index: 2;
@@ -53,7 +42,23 @@
     display: flex;
     flex-direction: column;
     min-height: 600px;
-    padding: 65px 0;
+    padding: 0 0 65px;
+    position: relative;
+    background-color: $white-color;
+    border: 1px solid $input-form-grey;
+    margin-bottom: 129px;
+
+    @include tablet {
+        border-left: none;
+        border-right: none;
+        margin-top: 0;
+    }
+
+    @include mobile {
+        border-left: none;
+        border-right: none;
+        margin-top: 0;
+    }
 }
 
 .product__item-button {
@@ -62,20 +67,13 @@
     color: $btn-form-pink;
     border: 1px solid $btn-form-pink;
     background-color: $white-color;
-    padding: 14px 56px 12px 72px;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.product__item-button:before {
-    content: '';
-    position: absolute;
-    width: 26px;
-    height: 24px;
-    background: transparent;
-    background-image: url(../img/cart.svg);
-    background-size: 26px 24px;
-    top: 12px;
-    left: 42px;
+.product__item-button-img {
+    fill: currentColor;
 }
 
 .product__item-button:hover,
@@ -86,15 +84,6 @@
     color: $white-color;
 }
 
-.product__item-button:active {
-    opacity: 0.7;
-    background-color: $title-block-pink;
-    cursor: pointer;
-    border: 1px solid $title-block-pink;
-    color: $white-color;
-} 
-
-
 .product__item-title {
     font-size: 14px;
     line-height: 17px;
@@ -102,6 +91,7 @@
     font-style: normal;
     color: $text-pink;
     text-transform: uppercase;
+    margin: 65px 0 0 0;
 }
 
 .product__item-subtitle {
@@ -119,6 +109,10 @@
     font-style: normal;
     width: 49%;
     margin: 48px 0 32px;
+
+    @include mobile {
+        width: 96%;
+    }
 }
 
 .product__item-price {
@@ -140,15 +134,11 @@
 }
 
 .product__item-hr {
-    width: 641px;
+    max-width: 641px;
     margin: 65px 0;
+
+    @include mobile {
+        width: 60%;
+    }
 }
 
-.dropdown-button {
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 17px;
-    font-weight: 400;
-    font-style: normal;
-    color: $menu-grey;
-}

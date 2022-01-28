@@ -1,7 +1,15 @@
 .carousel-img {
     width: 100%;
-    height: 777px;
+    max-height: 777px;
     object-fit: contain;
+
+    @include tablet {
+        max-height: 642px;
+    }
+
+    @include mobile {
+        max-height: 642px;
+    }
 } 
 
 .carousel-item-wrp {
