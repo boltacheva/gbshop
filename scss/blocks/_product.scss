@@ -1,0 +1,144 @@
+.product__breadcrumb {
+    display: flex;
+}
+
+.product__breadcrumb-item {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 300;
+    font-style: normal;
+    color: $menu-grey;
+    padding: 0 3px 0 3px;
+}
+
+.product__breadcrumb-item + .product__breadcrumb-item::before {
+    content: $breadcrumb-divider;
+}
+
+.product__breadcrumb-item > a {
+    text-decoration: none;
+    color: $menu-grey;
+}
+
+.product__breadcrumb-item.active {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    color: $title-block-pink;
+}
+
+.product__slider {
+    z-index: 1;
+}
+
+.product__item {
+    margin-top: -60px;
+    z-index: 2;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+    padding: 0 0 65px;
+    position: relative;
+    background-color: $white-color;
+    border: 1px solid $input-form-grey;
+    margin-bottom: 129px;
+
+    @include tablet {
+        border-left: none;
+        border-right: none;
+        margin-top: 0;
+    }
+
+    @include mobile {
+        border-left: none;
+        border-right: none;
+        margin-top: 0;
+    }
+}
+
+.product__item-button {
+    width: 210px;
+    height: 48px;
+    color: $btn-form-pink;
+    border: 1px solid $btn-form-pink;
+    background-color: $white-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.product__item-button-img {
+    fill: currentColor;
+}
+
+.product__item-button:hover,
+.product__item-button:focus {
+    background-color: $title-block-pink;
+    cursor: pointer;
+    border: 1px solid $title-block-pink;
+    color: $white-color;
+}
+
+.product__item-title {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 300;
+    font-style: normal;
+    color: $text-pink;
+    text-transform: uppercase;
+    margin: 65px 0 0 0;
+}
+
+.product__item-subtitle {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.product__item-description {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 300;
+    font-style: normal;
+    width: 49%;
+    margin: 48px 0 32px;
+
+    @include mobile {
+        width: 96%;
+    }
+}
+
+.product__item-price {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 300;
+    font-style: normal;
+    color: $text-pink;
+}
+
+.product__dropdown {
+    margin: 0 0 49px;
+}
+
+.product__item-title-hr {
+    width: 63px;
+    border: 1px solid $pink-color;
+    color: $pink-color;
+}
+
+.product__item-hr {
+    max-width: 641px;
+    margin: 65px 0;
+
+    @include mobile {
+        width: 60%;
+    }
+}
+

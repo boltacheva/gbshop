@@ -23,6 +23,10 @@ body {
     margin: -1px;
 }
 
+.sprite {
+    display: none;
+}
+
 @media (max-width: $tablet-width){
     .container {
         width: 96%;

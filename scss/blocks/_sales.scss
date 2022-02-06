@@ -13,9 +13,7 @@
 .sales__item {
     min-width: 31%;
     min-height: 260px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     flex-direction: column;
 
     @include tablet {
