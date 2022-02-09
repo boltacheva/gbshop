@@ -289,7 +289,7 @@ body {
     object-fit: cover; }
     @media (max-width: 1599px) {
       .brand__img {
-        height: 367px;
+        height: 50%;
         width: 50%; } }
     @media (max-width: 767px) {
       .brand__img {
@@ -383,22 +383,26 @@ body {
 
 .sales__item--women {
   background-image: url(../img/woman.jpg);
-  background-size: cover; }
+  background-size: cover;
+  background-color: #a66F00; }
 
 .sales__item--men {
   background-image: url(../img/man.jpg);
-  background-size: cover; }
+  background-size: cover;
+  background-color: #a66F00; }
 
 .sales__item--kids {
   background-image: url(../img/kids.jpg);
-  background-size: cover; }
+  background-size: cover;
+  background-color: #a66F00; }
 
 .sales__item--accessories {
   background-image: url(../img/accessories.jpg);
   background-size: cover;
   width: 100%;
   margin: 30px 0 0 0;
-  min-height: 180px; }
+  min-height: 180px;
+  background-color: #a66F00; }
   @media (max-width: 1599px) {
     .sales__item--accessories {
       min-height: 116px;
@@ -765,7 +769,8 @@ body {
   background-size: cover;
   min-height: 448px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  background-color: #f8f8f8; }
   @media (max-width: 1599px) {
     .footer__subscribe {
       min-height: 693px; } }

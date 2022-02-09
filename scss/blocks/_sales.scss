@@ -43,16 +43,19 @@
 .sales__item--women {
     background-image: url(../img/woman.jpg);
     background-size: cover;
+    background-color: $brg-img;
 }
 
 .sales__item--men {
     background-image: url(../img/man.jpg);
     background-size: cover;
+    background-color: $brg-img;
 }
 
 .sales__item--kids {
     background-image: url(../img/kids.jpg);
     background-size: cover;
+    background-color: $brg-img;
 }
 
 .sales__item--accessories {
@@ -61,6 +64,7 @@
     width: 100%;
     margin: 30px 0 0 0;
     min-height: 180px;
+    background-color: $brg-img;
 
     @include tablet {
         min-height: 116px;
