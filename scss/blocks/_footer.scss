@@ -4,6 +4,7 @@
     min-height: 448px;
     display: flex;
     align-items: center;
+    background-color: $grey-color;
 
     @include tablet {
         min-height: 693px;
